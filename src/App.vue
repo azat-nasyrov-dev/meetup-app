@@ -1,17 +1,17 @@
 <template>
-    <div class="app">
-      <h1>Hello, world!</h1>
-    </div>
+  <div class='app'>
+    <h1>Hello, world!</h1>
+  </div>
 </template>
 
 <script>
 export default {
-    name: 'App',
-}
+  name: 'App',
+};
 </script>
 
 <style scoped>
- .app {
-     text-align: center;
- }
+.app {
+    text-align: center;
+}
 </style>
