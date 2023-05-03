@@ -39,7 +39,7 @@ export const addMonths = (date, months) => makeDate(makeDate(date).setUTCMonth(d
  * @return {Date}
  */
 
-export const getFirsDateOfMonth = (date) => makeDate(makeDate(makeDate(date).setUTCDate(1)).setUTCHours(0, 0, 0, 0));
+export const getFirstDateOfMonth = (date) => makeDate(makeDate(makeDate(date).setUTCDate(1)).setUTCHours(0, 0, 0, 0));
 
 /**
  * Получить дату последнего дня месяца
@@ -47,7 +47,7 @@ export const getFirsDateOfMonth = (date) => makeDate(makeDate(makeDate(date).set
  * @return {Date}
  */
 
-export const getLastDateOfMonth = (date) => addDays(getFirsDateOfMonth(addMonths(date, 1)), -1);
+export const getLastDateOfMonth = (date) => addDays(getFirstDateOfMonth(addMonths(date, 1)), -1);
 
 /**
  * Форматировать дату в строку в формате YYYY-MM-DD
