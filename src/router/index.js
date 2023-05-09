@@ -38,6 +38,25 @@ export const routes = [
       },
     ],
   },
+  {
+    path: '/login',
+    name: 'login',
+    meta: {
+      requireGuest: true,
+    },
+    props: (to) => ({
+      from: to.query.from,
+    }),
+    component: () => import('../views/PageLogin.vue'),
+  },
+  {
+    path: '/register',
+    name: 'register',
+    meta: {
+      requireGuest: true,
+    },
+    component: () => import('../views/PageRegister.vue'),
+  },
 ];
 
 export const router = createRouter({
