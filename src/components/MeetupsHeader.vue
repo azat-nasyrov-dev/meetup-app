@@ -8,6 +8,7 @@
 <script>
 import MeetupsLogo from './MeetupsLogo.vue';
 import MeetupsNav from './MeetupsNav.vue';
+
 export default {
   name: 'MeetupsHeader',
 

@@ -10,6 +10,7 @@
 <script>
 import UiContainer from './UiContainer.vue';
 import UiLink from './UiLink.vue';
+
 export default {
   name: 'MeetupsFooter',
 
