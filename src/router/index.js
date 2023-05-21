@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
+import { scrollBehaviour } from './scrollBehaviour.js';
 
 /** @type {import('vue-router').RouteRecordRaw[]} */
 
@@ -62,4 +63,5 @@ export const routes = [
 export const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes,
+  scrollBehavior,
 });
