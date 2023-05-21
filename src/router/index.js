@@ -59,6 +59,25 @@ export const routes = [
     },
     component: () => import('../views/PageRegister.vue'),
   },
+  {
+    path: '/meetups/create',
+    name: 'meetup-create',
+    meta: {
+      requireAuth: true,
+    },
+    component: () => import('../views/PageCreateMeetup.vue'),
+  },
+  {
+    path: '/meetups/:meetupId(\d+)/edit',
+    name: 'meetup-edit',
+    meta: {
+      requireAuth: true,
+    },
+    props: (to) => ({
+      meetupId: +to.params.meetupId,
+    }),
+    component: () => import('../views/PageEditMeetup.vue'),
+  },
 ];
 
 export const router = createRouter({
