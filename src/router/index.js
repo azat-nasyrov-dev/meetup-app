@@ -78,6 +78,10 @@ export const routes = [
     }),
     component: () => import('../views/PageEditMeetup.vue'),
   },
+  {
+    path: '/:unknownPath(.*)',
+    component: () => import('../views/PageNotFound.vue'),
+  },
 ];
 
 export const router = createRouter({
