@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import { scrollBehaviour } from './scrollBehaviour.js';
+import { authGuard } from './authGuard.js';
 
 /** @type {import('vue-router').RouteRecordRaw[]} */
 
@@ -65,3 +66,5 @@ export const router = createRouter({
   routes,
   scrollBehavior,
 });
+
+router.beforeEach(authGuard);
