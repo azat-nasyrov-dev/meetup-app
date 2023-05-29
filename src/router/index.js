@@ -6,6 +6,11 @@ import { authGuard } from './authGuard.js';
 
 export const routes = [
   {
+    path: '/demo',
+    name: 'demo',
+    component: () => import('../views/PageDemo.vue'),
+  },
+  {
     path: '/',
     name: 'index',
     component: () => import('../views/PageMeetups.vue'),
