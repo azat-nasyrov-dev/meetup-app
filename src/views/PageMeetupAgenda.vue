@@ -1,17 +1,24 @@
 <template>
-  <div class="page-agenda">
-    Page meetup agenda will be here!
-  </div>
+  <MeetupAgenda v-if="meetup.agenda.length" :agenda="meetup.agenda" />
+  <UiAlert v-else>Программа пока пуста...</UiAlert>
 </template>
 
 <script>
+import MeetupAgenda from '../components/MeetupAgenda.vue';
+import UiAlert from '../components/UiAlert.vue';
+
 export default {
   name: 'PageMeetupAgenda',
+
+  components: { UiAlert, MeetupAgenda },
+
+  props: {
+    meetup: {
+      type: Object,
+      required: true,
+    },
+  },
 };
 </script>
 
-<style scoped>
-.page-agenda {
-  text-align: center;
-}
-</style>
+<style scoped></style>
