@@ -376,7 +376,7 @@ import UiInputDate from '../components/UiInputDate.vue';
 import UiLink from '../components/UiLink.vue';
 import UiPageTitle from '../components/UiPageTitle.vue';
 import UiRadioGroup from '../components/UiRadioGroup.vue';
-import UiTab from '../components/UiTab.vue';
+// import UiTab from '../components/UiTab.vue';
 import UiTabs from '../components/UiTabs.vue';
 import UiToast from '../plugins/toaster/UiToast.vue';
 import UiTransitionFade from '../components/UiTransitionFade.vue';
@@ -443,7 +443,7 @@ export default {
   name: 'PageDemo',
 
   components: {
-    UiTab,
+    // UiTab,
     UiTabs,
     DemoSection,
     MeetupForm,
