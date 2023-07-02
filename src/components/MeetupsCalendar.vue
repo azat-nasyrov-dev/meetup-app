@@ -4,7 +4,7 @@
       v-for="meetup in meetupsByDate[timestamp]"
       :key="meetup.id"
       tag="RouterLink"
-      :to="{ name: 'meetup', param: { meetupId: meetup.id } }"
+      :to="{ name: 'meetup', params: { meetupId: meetup.id } }"
     >
       {{ meetup.title }}
     </UiCalendarEvent>
@@ -14,6 +14,7 @@
 <script>
 import UiCalendarEvent from './UiCalendarEvent.vue';
 import UiCalendarView from './UiCalendarView.vue';
+
 export default {
   name: 'MeetupsCalendar',
 
