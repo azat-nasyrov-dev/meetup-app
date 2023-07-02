@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint src --ext .vue,.js,.jsx,.ts,.tsx --fix --ignore-path .gitignore",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@vueuse/head": "^1.0.22",
