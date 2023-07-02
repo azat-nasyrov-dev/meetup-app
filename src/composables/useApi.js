@@ -23,6 +23,7 @@ export function useApi(apiFunc, { showProgress = false, successToast = false, er
       try {
         const result = await func(...args);
         progress.finish(func);
+        return result;
       } catch (error) {
         progress.fail();
         throw error;
